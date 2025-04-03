@@ -1,0 +1,12 @@
+@use '../mixins/breakpoint' as *;
+
+.container {
+    max-width: calc(1760px + 160px);
+    margin: 0 auto;
+    padding: 0 80px;
+
+    @include tablet {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+}
